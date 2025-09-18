@@ -1,10 +1,12 @@
-
+:root {
+    --var: 16;
+}
 
 .squaresmain{
     display:flex;
     flex-wrap: wrap;
-    height:500px;
-    width:500px;
+    height: 700px;
+    width: 700px;
     border: 2px solid red;
     align-content:start;
 }
@@ -20,8 +22,8 @@ body{
 
 
 .box{
-    height:20px;
-    width:20px;
+    height:calc(700px / var(--var));
+    width:calc(700px / var(--var));
     border: 2px solid black;
     box-sizing: border-box;
 
